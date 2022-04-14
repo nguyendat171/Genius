@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 82px;
+  box-shadow: 4px 4px 72px 0 rgba(49, 57, 67, 0.16);
+  @media (max-width: 1440px) {
+    padding: 0 10px;
+  }
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    font-size: 14px;
+    display: flex;
+  }
+  &__logo {
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    margin-right: 160px;
+    padding: 15px 0;
+    @media (max-width: 1200px) {
+      width: 10%;
+    }
+    img {
+      width: 176px;
+    }
+  }
+  .nav {
+    padding: 15px;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}

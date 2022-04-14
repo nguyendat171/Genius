@@ -1,0 +1,142 @@
+// Font face load
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../assets/fonts/NotoSansRegular/NotoSans-Regular.eot');
+  src: url('../assets/fonts/NotoSansRegular/NotoSans-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/NotoSansRegular/NotoSans-Regular.woff2')
+      format('woff2'),
+    url('../assets/fonts/NotoSansRegular/NotoSans-Regular.woff') format('woff'),
+    url('../assets/fonts/NotoSansRegular/NotoSans-Regular.ttf')
+      format('truetype'),
+    url('../assets/fonts/NotoSansRegular/NotoSans-Regular.svg#NotoSans-Regular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../assets/fonts/NotoSansBold/NotoSans-Bold.eot');
+  src: url('../assets/fonts/NotoSansBold/NotoSans-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/NotoSansBold/NotoSans-Bold.woff2') format('woff2'),
+    url('../assets/fonts/NotoSansBold/NotoSans-Bold.woff') format('woff'),
+    url('../assets/fonts/NotoSansBold/NotoSans-Bold.ttf') format('truetype'),
+    url('../assets/fonts/NotoSansBold/NotoSans-Bold.svg#NotoSans-Bold')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.eot');
+  src: url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.woff2')
+      format('woff2'),
+    url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.woff')
+      format('woff'),
+    url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.ttf')
+      format('truetype'),
+    url('../assets/fonts/NotoSansSemiBold/NotoSans-SemiBold.svg#NotoSans-SemiBold')
+      format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/RobotoBold/Roboto-Bold.eot');
+  src: url('../assets/fonts/RobotoBold/Roboto-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/RobotoBold/Roboto-Bold.woff2') format('woff2'),
+    url('../assets/fonts/RobotoBold/Roboto-Bold.woff') format('woff'),
+    url('../assets/fonts/RobotoBold/Roboto-Bold.ttf') format('truetype'),
+    url('../assets/fonts/RobotoBold/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@import '~bootstrap/scss/bootstrap';
+@import '~react-toastify/dist/ReactToastify';
+// common
+@import './common/nav.scss';
+@import './common/nav-tabs.scss';
+
+//components
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/custom-input.scss';
+@import './components/gallery.scss';
+@import './components/service-item.scss';
+@import './components/packet-item.scss';
+
+//containers
+@import './containers/login.scss';
+@import './containers/home.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container-wrapper {
+  max-width: 1460px;
+  padding: 0 10px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    overflow-x: hidden;
+  }
+}
+.container-inner {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  &:hover {
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+.img-responsive {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+button {
+  outline: inherit;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  box-shadow: none !important;
+  outline-color: none !important;
+  outline: none;
+}

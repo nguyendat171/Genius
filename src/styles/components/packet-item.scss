@@ -1,0 +1,71 @@
+.packet {
+  font-family: 'Roboto', sans-serif;
+  background: #f3f9ff;
+  padding: 130px;
+  color: #181949;
+  @media (max-width: 1440px) {
+    padding: 130px 20px;
+  }
+  &__block {
+    background: #fff;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 40px 10px 40px 40px;
+    background-color: #fff;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+    &.active {
+      background-color: #e6367e;
+      div {
+        color: #fff !important;
+      }
+    }
+    &:hover {
+      border: 1px solid #e6367e;
+    }
+  }
+
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__name {
+    font-size: 22px;
+    @media (max-width: 1100px) {
+      font-size: 16px;
+    }
+  }
+  &__message {
+    font-size: 12px;
+    color: #374754;
+  }
+  &__info {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__price {
+    font-size: 36px;
+    color: #111;
+    margin-right: 10px;
+    vertical-align: bottom;
+    @media (max-width: 1100px) {
+      font-size: 30px;
+    }
+  }
+  &__symbol {
+    color: #252b42;
+    font-size: 22px;
+    @media (max-width: 1100px) {
+      font-size: 16px;
+    }
+  }
+  &__pay {
+    font-size: 12px;
+    color: #374754;
+  }
+}

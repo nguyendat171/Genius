@@ -1,0 +1,16 @@
+.home-page {
+  color: #181949;
+  &__notice {
+    font-size: 24px;
+    text-align: center;
+    padding: 38px 0;
+    margin-bottom: 78px;
+    background-color: #ffd1e8;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

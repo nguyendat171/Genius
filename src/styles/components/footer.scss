@@ -1,0 +1,35 @@
+.footer {
+  font-size: 15px;
+  font-weight: 4000;
+  color: #666666;
+  line-height: 20px;
+  background-color: #f3f9ff;
+  border-top: 1px solid rgba(153, 153, 153, 0.46);
+  &__wrapper {
+    max-width: 1440px;
+    padding: 0 110px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .row > * {
+    padding: 0 25px 0 40px;
+    &:not(:first-child) {
+      border-left: 2px solid rgba(153, 153, 153, 0.46);
+      @media (max-width: 991px) {
+        border-left: none;
+      }
+    }
+  }
+  span:first-child {
+    margin-right: 22px;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 500;
+
+    line-height: 30px;
+    color: #181949;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+}

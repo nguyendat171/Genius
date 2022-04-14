@@ -1,0 +1,39 @@
+.service-item {
+  padding: 80px 0;
+  margin-top: 10px;
+  &.service-item--severse {
+    background-color: #f4f4f4;
+  }
+  img {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  li:not(:last-child) {
+    margin-right: 32px;
+    margin-bottom: 18px;
+  }
+  button {
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #181949;
+  }
+}

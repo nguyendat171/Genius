@@ -1,0 +1,32 @@
+.nav-home {
+  .nav-tabs {
+    display: block;
+    width: 100%;
+    margin-top: 135px;
+    text-align: center;
+    border-bottom: none;
+    padding: 0 px;
+    .nav-item {
+      .nav-link {
+        padding: 12px 20px;
+        font-size: 22px;
+        color: #fff;
+        opacity: 0.5;
+        &.active {
+          opacity: 1;
+          border-bottom: 3px solid #fff;
+        }
+        &:hover {
+          opacity: 1;
+          border-bottom: 3px solid #fff;
+        }
+      }
+    }
+  }
+  .tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+}
