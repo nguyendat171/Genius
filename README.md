@@ -6,7 +6,7 @@ This is the test for FrontEnd Genius.
 
 ##### Frontend:
 
-Typescript, React, ESlint, Prettier, Redux with [Redux-saga](https://redux-saga.js.org/).
+Typescript, React, ESlint, Prettier, Redux with [Redux Toolkit](https://redux-toolkit.js.org/) and middleware with [Redux-saga](https://redux-saga.js.org/).
 Bootstrap, SASS.
 
 ## Extra works
